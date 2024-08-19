@@ -9,6 +9,7 @@
         <script src="./items/itemList.js" defer></script>
         <script src="./items/item000.js" defer></script>
         <script src="./items/item001.js" defer></script>
+        <script src="./buildings/buildingList.js" defer></script>
         <title>Random Idle Game - Demo Project</title>
     </head>
     <body>
@@ -22,7 +23,7 @@
                     <h1>Worker Price: <span id="workerPriceText">10</span></h1>
                     <h1>Free Workers: <span id="workerAvailableText">0</span></h1>
                     <button type="button" id="hireWorkerButton">Hire Workers</button>
-                    <div class="container grid-container" id="grid-container"></div>
+                    <div class="container grid-container" id="item-grid-container"></div>
                 </div>
                 <div class="container center-container">
                     <div class="navbar center-navbar">
@@ -31,25 +32,8 @@
                             <li data-tab-target="#research" class="tabs">Research</li>
                         </ul>
                         <div class="container tab-content">
-                            <div id="buildings" data-tab-content class=" container active">
-                                <h1>Buildings</h1>
-                                <div class="container grid-container">
-                                    <div class="container buildings" id="building000">
-                                        <div class="container building-name">
-                                            <h1>Woodcutter's Hut</h1>
-                                        </div>
-                                        <div class="container building-requirements">
-                                            <h1>Wood: <span>100</span></h1>
-                                            <h1>Stone: <span>100</span></h1>
-                                        </div>
-                                        <div class="container building-count">
-                                            <h1><span>0</span></h1>
-                                        </div>
-                                        <div class="container build">
-                                            <button>Build</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div id="buildings" data-tab-content class=" container active">   
+                                <div class="container grid-container" id="building-grid-container"></div>
                             </div>
                             <div id="research" data-tab-content class="container">
                                 <h1>Research</h1>

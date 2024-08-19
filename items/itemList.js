@@ -3,14 +3,14 @@ let items = [
         id: "000",
         "job_name": "Woodcutters",
         "job_value": 0,
-        "resource_name": "wood",
+        "resource_name": "Wood",
         "resource_value": 0,
     },
     {
         id: "001",
         "job_name": "Stone Miners",
         "job_value": 0,
-        "resource_name": "stone",
+        "resource_name": "Stone",
         "resource_value": 0,
     },
 ]
@@ -33,5 +33,5 @@ items.forEach(item => {
         </div>
     </div>`
 
-    document.getElementById("grid-container").insertAdjacentHTML("beforebegin",html);
+    document.getElementById("item-grid-container").insertAdjacentHTML("beforebegin",html);
 })
