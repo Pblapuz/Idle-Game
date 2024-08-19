@@ -7,7 +7,7 @@ add_001btn.onclick = add_001;
 remove_001btn.onclick = remove_001;
 
 function add_001(){
-    if (worker > 0) {
+    if ((worker > 0) && ( items[1].job_value < max_001)) {
         items[1].job_value++;
         worker--;
         job_001.innerText = items[1].job_value;

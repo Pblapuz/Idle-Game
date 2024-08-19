@@ -11,16 +11,22 @@ const workerAvailableText = document.querySelector("#workerAvailableText");
 let townLevel = 1;
 let gold = 100;
 let workerPrice = 10;
+let totalWorker = 0;
 let worker = 0;
+
+let max_worker = 5;
+let max_000 = 5;
+let max_001 = 5;
 
 hireWorkerButton.onclick = hire;
 
 function hire(){
-    if (gold >= workerPrice){
+    if ((gold >= workerPrice) && (totalWorker < max_worker)){
+        totalWorker++;
         worker++;
         workerAvailableText.innerText = worker;
         gold -= workerPrice;
-        workerPrice = Math.floor(workerPrice*1.5);
+        workerPrice = Math.floor(workerPrice*1.1);
         workerPriceText.innerText = workerPrice;
     }
 }

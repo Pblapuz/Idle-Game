@@ -4,14 +4,14 @@ let items = [
         "job_name": "Woodcutters",
         "job_value": 0,
         "resource_name": "Wood",
-        "resource_value": 0,
+        "resource_value": 1000,
     },
     {
         id: "001",
         "job_name": "Stone Miners",
         "job_value": 0,
         "resource_name": "Stone",
-        "resource_value": 0,
+        "resource_value": 1000,
     },
 ]
 

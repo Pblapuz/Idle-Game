@@ -64,7 +64,7 @@
     height: 100%;
 }
 .building-name {
-    width: 30%;
+    width: 20%;
     height: 100%;
 }
 .building-requirements {
@@ -72,7 +72,7 @@
     height: 100%;
 }
 .building-effect {
-    width: 20%;
+    width: 30%;
     height: 100%;
 }
 .building-count {
