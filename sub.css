@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;}
+li {
+    float: left;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color:aliceblue;}
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+    display: block;
+}
+button {
+    color: aliceblue;
+    background-color: #333;
+    height: 12px;
+    min-width: 20px;
+    padding: 0 5px;
+}

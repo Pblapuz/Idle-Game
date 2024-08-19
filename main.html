@@ -3,64 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="./script.js" defer></script>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="sub.css">
+        <script src="./main.js" defer></script>
+        <script src="./items/itemList.js" defer></script>
+        <script src="./items/item000.js" defer></script>
+        <script src="./items/item001.js" defer></script>
         <title>Random Idle Game - Demo Project</title>
     </head>
     <body>
         <div class="container main-container">
             <div class="container top-container">
-                <div class="navbar top-navbar">
-                    <ul>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Menu</a></li>
-                    </ul>
-                </div>
             </div>
             <div class="container bottom-container">
                 <div class="container left-container">
                     <h1>Town Level: <span id="townLevelText">1</span></h1>
                     <h1>Gold: <span id="goldText">100</span></h1>
-                    <button id="workButton">Work!</button>
-                    <div>
-                        <div class="container grid">
-                            <div class="container labels">
-                                <h1>Workers</h1>
-                                <br>
-                                <h1>Woodcutters</h1>
-                                <h1>Stone Miners</h1>
-                            </div>
-                            <div class="container workers">
-                                <h1><span id="workerPriceText">10</span></h1>
-                                <br>
-                                <h1><span id="woodcutterText">0</span></h1>
-                                <h1><span id="stoneMinerText">0</span></h1>
-                            </div>
-                            <div class="container values">
-                                <h1><span id="workerAvailableText">0</span></h1>
-                                <br>
-                                <h1><span id="woodText">0</span></h1>
-                                <h1><span id="stoneText">0</span></h1>
-                            </div>
-                            <div class="container buttons">
-                                <div><button id="hireWorkerButton">Hire</button></div>
-                                <br>
-                                <div><button id="addWoodcutterButton">+</button><button id="removeWoodcutterButton">-</button></div>
-                                <div><button id="addStoneMinerButton">+</button><button id="removeStoneMinerButton">-</button></div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1>Worker Price: <span id="workerPriceText">10</span></h1>
+                    <h1>Free Workers: <span id="workerAvailableText">0</span></h1>
+                    <button type="button" id="hireWorkerButton">Hire Workers</button>
+                    <div class="container grid-container" id="grid-container"></div>
                 </div>
                 <div class="container center-container">
                     <div class="navbar center-navbar">
-                        <ul>
-                            <li><a href="">Buildings</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Menu</a></li>
-                            <li><a href="">Menu</a></li>
+                        <ul class="tabs">
+                            <li data-tab-target="#buildings" class="active tabs">Buildings</li>
+                            <li data-tab-target="#research" class="tabs">Research</li>
                         </ul>
+                        <div class="container tab-content">
+                            <div id="buildings" data-tab-content class=" container active">
+                                <h1>Buildings</h1>
+                                <div class="container grid-container">
+                                    <div class="container buildings" id="building000">
+                                        <div class="container building-name">
+                                            <h1>Woodcutter's Hut</h1>
+                                        </div>
+                                        <div class="container building-requirements">
+                                            <h1>Wood: <span>100</span></h1>
+                                            <h1>Stone: <span>100</span></h1>
+                                        </div>
+                                        <div class="container building-count">
+                                            <h1><span>0</span></h1>
+                                        </div>
+                                        <div class="container build">
+                                            <button>Build</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="research" data-tab-content class="container">
+                                <h1>Research</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container right-container">
