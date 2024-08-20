@@ -49,7 +49,7 @@ let buildings = [
 
 buildings.forEach(building => {
     let html =`
-        <div class="container buildings">
+        <div class="container buildings-container">
             <div class="container building-name">
                 <h1>${building.building_name}</h1>
             </div>

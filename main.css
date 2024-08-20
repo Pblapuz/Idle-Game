@@ -1,3 +1,9 @@
+:root{
+    --color0: #333;
+    --color1: #f0f8ff;
+    --color2: #666;
+}
+
 * {
     border: 0;
     padding: 0;
@@ -5,10 +11,7 @@
     font-size: 12px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 100;}
-    
-.container {
-    background-color: rgb(102, 102, 175);
-}
+
 .main-container {
     height: 100vh;
     width: 100vw;
@@ -20,7 +23,8 @@
     height: auto;
 }
 .bottom-container {
-    width: 100%;
+    margin: 1%;
+    width: 98%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -30,7 +34,8 @@
     height: 100%;
 }
 .center-container {
-    width: 40%;
+    margin: 0 1%;
+    width: 38%;
     height: 100%;
 }
 .right-container {
@@ -42,10 +47,12 @@
     flex-direction: column;
     width: 100%;
 }
-.item-container{
+.item-container, .buildings-container{
     display: flex;
     width: 100%;
-    height: auto; 
+    height: auto;
+    padding: 2.5px 0;
+    border-bottom: 1px solid var(--color0);
 }
 .job-name {
     width: 20%;
@@ -56,7 +63,7 @@
     height: 100%;
 }
 .item-name {
-    width: 30%;
+    width: 25%;
     height: 100%;
 }
 .item-value {
@@ -64,7 +71,7 @@
     height: 100%;
 }
 .item-buttons {
-    width: 10%;
+    width: 15%;
     height: 100%;
 }
 .building-name {
@@ -84,23 +91,26 @@
     height: 100%;
 }
 .build-button {
+    margin: auto;
     width: 15%;
     height: 100%;
-}
-.buildings {
-    display: flex;
-    width: 100%;
 }
 ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;}
+    background-color: var(--color0);
+}
 li {
     float: left;
     text-decoration: none;
     display: block;
     padding: 10px;
-    color:aliceblue;}
+    color:var(--color1);
+}
+li:hover:not(#nav_title) {
+    cursor:pointer;
+    background-color: var(--color2);
+}
 [data-tab-content] {
     display: none;
 }
@@ -109,8 +119,14 @@ li {
 }
 button {
     color: aliceblue;
-    background-color: #333;
-    height: 12px;
+    background-color: var(--color0);
+    height: auto;
     min-width: 20px;
-    padding: 0 5px;
+    padding: 1px 5px;
+}
+button:hover {
+    cursor:pointer;
+}
+button:active {
+    background-color: var(--color2);
 }
